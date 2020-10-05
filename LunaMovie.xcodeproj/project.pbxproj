@@ -14,34 +14,7 @@
 		F9C8450A252998DC00A69809 /* LunaMovie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9C84508252998DC00A69809 /* LunaMovie.xcdatamodeld */; };
 		F9C8450C252998DC00A69809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C8450B252998DC00A69809 /* Assets.xcassets */; };
 		F9C8450F252998DC00A69809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C8450D252998DC00A69809 /* LaunchScreen.storyboard */; };
-		F9C84572252A3E3A00A69809 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C8455C252A3E3A00A69809 /* main.swift */; };
-		F9C84573252A3E3A00A69809 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C84562252A3E3A00A69809 /* main.swift */; };
-		F9C84574252A3E3A00A69809 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C8456B252A3E3A00A69809 /* main.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F9C8455E252A3E3A00A69809 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F9C84558252A3E3A00A69809 /* KotakAjaib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F9C8454B252A3D7900A69809;
-			remoteInfo = KotakAjaib;
-		};
-		F9C84567252A3E3A00A69809 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F9C84563252A3E3A00A69809 /* PushRank.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F9C84537252A231D00A69809;
-			remoteInfo = PushRank;
-		};
-		F9C84570252A3E3A00A69809 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F9C8456C252A3E3A00A69809 /* RotasiKiri.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F9C84523252A18B900A69809;
-			remoteInfo = RotasiKiri;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F9C844FC252998DC00A69809 /* LunaMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunaMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,12 +26,6 @@
 		F9C8450B252998DC00A69809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9C8450E252998DC00A69809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9C84510252998DC00A69809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9C84558252A3E3A00A69809 /* KotakAjaib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KotakAjaib.xcodeproj; sourceTree = "<group>"; };
-		F9C8455C252A3E3A00A69809 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		F9C84562252A3E3A00A69809 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		F9C84563252A3E3A00A69809 /* PushRank.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PushRank.xcodeproj; sourceTree = "<group>"; };
-		F9C8456B252A3E3A00A69809 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		F9C8456C252A3E3A00A69809 /* RotasiKiri.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RotasiKiri.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +42,6 @@
 		F9C844F3252998DC00A69809 = {
 			isa = PBXGroup;
 			children = (
-				F9C84557252A3E3A00A69809 /* KotakAjaib */,
-				F9C84560252A3E3A00A69809 /* PushRank */,
-				F9C84569252A3E3A00A69809 /* RotasiKiri */,
 				F9C844FE252998DC00A69809 /* LunaMovie */,
 				F9C844FD252998DC00A69809 /* Products */,
 			);
@@ -130,81 +94,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		F9C84557252A3E3A00A69809 /* KotakAjaib */ = {
-			isa = PBXGroup;
-			children = (
-				F9C84558252A3E3A00A69809 /* KotakAjaib.xcodeproj */,
-				F9C8455B252A3E3A00A69809 /* KotakAjaib */,
-			);
-			path = KotakAjaib;
-			sourceTree = "<group>";
-		};
-		F9C84559252A3E3A00A69809 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F9C8455F252A3E3A00A69809 /* KotakAjaib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F9C8455B252A3E3A00A69809 /* KotakAjaib */ = {
-			isa = PBXGroup;
-			children = (
-				F9C8455C252A3E3A00A69809 /* main.swift */,
-			);
-			path = KotakAjaib;
-			sourceTree = "<group>";
-		};
-		F9C84560252A3E3A00A69809 /* PushRank */ = {
-			isa = PBXGroup;
-			children = (
-				F9C84561252A3E3A00A69809 /* PushRank */,
-				F9C84563252A3E3A00A69809 /* PushRank.xcodeproj */,
-			);
-			path = PushRank;
-			sourceTree = "<group>";
-		};
-		F9C84561252A3E3A00A69809 /* PushRank */ = {
-			isa = PBXGroup;
-			children = (
-				F9C84562252A3E3A00A69809 /* main.swift */,
-			);
-			path = PushRank;
-			sourceTree = "<group>";
-		};
-		F9C84564252A3E3A00A69809 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F9C84568252A3E3A00A69809 /* PushRank */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F9C84569252A3E3A00A69809 /* RotasiKiri */ = {
-			isa = PBXGroup;
-			children = (
-				F9C8456A252A3E3A00A69809 /* RotasiKiri */,
-				F9C8456C252A3E3A00A69809 /* RotasiKiri.xcodeproj */,
-			);
-			path = RotasiKiri;
-			sourceTree = "<group>";
-		};
-		F9C8456A252A3E3A00A69809 /* RotasiKiri */ = {
-			isa = PBXGroup;
-			children = (
-				F9C8456B252A3E3A00A69809 /* main.swift */,
-			);
-			path = RotasiKiri;
-			sourceTree = "<group>";
-		};
-		F9C8456D252A3E3A00A69809 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F9C84571252A3E3A00A69809 /* RotasiKiri */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,50 +139,12 @@
 			mainGroup = F9C844F3252998DC00A69809;
 			productRefGroup = F9C844FD252998DC00A69809 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = F9C84559252A3E3A00A69809 /* Products */;
-					ProjectRef = F9C84558252A3E3A00A69809 /* KotakAjaib.xcodeproj */;
-				},
-				{
-					ProductGroup = F9C84564252A3E3A00A69809 /* Products */;
-					ProjectRef = F9C84563252A3E3A00A69809 /* PushRank.xcodeproj */;
-				},
-				{
-					ProductGroup = F9C8456D252A3E3A00A69809 /* Products */;
-					ProjectRef = F9C8456C252A3E3A00A69809 /* RotasiKiri.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F9C844FB252998DC00A69809 /* LunaMovie */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		F9C8455F252A3E3A00A69809 /* KotakAjaib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = KotakAjaib;
-			remoteRef = F9C8455E252A3E3A00A69809 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F9C84568252A3E3A00A69809 /* PushRank */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = PushRank;
-			remoteRef = F9C84567252A3E3A00A69809 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F9C84571252A3E3A00A69809 /* RotasiKiri */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = RotasiKiri;
-			remoteRef = F9C84570252A3E3A00A69809 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F9C844FA252998DC00A69809 /* Resources */ = {
@@ -314,9 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9C84504252998DC00A69809 /* ViewController.swift in Sources */,
-				F9C84574252A3E3A00A69809 /* main.swift in Sources */,
-				F9C84572252A3E3A00A69809 /* main.swift in Sources */,
-				F9C84573252A3E3A00A69809 /* main.swift in Sources */,
 				F9C84500252998DC00A69809 /* AppDelegate.swift in Sources */,
 				F9C8450A252998DC00A69809 /* LunaMovie.xcdatamodeld in Sources */,
 				F9C84502252998DC00A69809 /* SceneDelegate.swift in Sources */,
@@ -476,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lunaski.LunaMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -495,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lunaski.LunaMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
