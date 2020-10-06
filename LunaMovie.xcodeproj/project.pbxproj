@@ -7,25 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DB12A07B2AB5DA555FDC489 /* Pods_LunaMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD19F8A5031D49E5194FF18 /* Pods_LunaMovie.framework */; };
 		F9C84500252998DC00A69809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C844FF252998DC00A69809 /* AppDelegate.swift */; };
 		F9C84502252998DC00A69809 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C84501252998DC00A69809 /* SceneDelegate.swift */; };
-		F9C84504252998DC00A69809 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C84503252998DC00A69809 /* ViewController.swift */; };
 		F9C84507252998DC00A69809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C84505252998DC00A69809 /* Main.storyboard */; };
 		F9C8450A252998DC00A69809 /* LunaMovie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9C84508252998DC00A69809 /* LunaMovie.xcdatamodeld */; };
 		F9C8450C252998DC00A69809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C8450B252998DC00A69809 /* Assets.xcassets */; };
 		F9C8450F252998DC00A69809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C8450D252998DC00A69809 /* LaunchScreen.storyboard */; };
+		F9C845AD252B07C000A69809 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C845AC252B07C000A69809 /* PopularViewController.swift */; };
+		F9C845B1252B119400A69809 /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C845B0252B119400A69809 /* MovieViewCell.swift */; };
+		F9D147B1252B35AE0072DA0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D147B0252B35AE0072DA0A /* MainViewController.swift */; };
+		F9D147B4252B360A0072DA0A /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D147B3252B360A0072DA0A /* FavoriteViewController.swift */; };
+		F9D147B8252B4B2B0072DA0A /* PopularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D147B7252B4B2B0072DA0A /* PopularViewModel.swift */; };
+		F9D147BD252B4C270072DA0A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D147BC252B4C270072DA0A /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5372713FB2FD2ABE791927E3 /* Pods-LunaMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunaMovie.debug.xcconfig"; path = "Target Support Files/Pods-LunaMovie/Pods-LunaMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		DCD19F8A5031D49E5194FF18 /* Pods_LunaMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunaMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C844FC252998DC00A69809 /* LunaMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunaMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C844FF252998DC00A69809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C84501252998DC00A69809 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9C84503252998DC00A69809 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9C84506252998DC00A69809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9C84509252998DC00A69809 /* LunaMovie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LunaMovie.xcdatamodel; sourceTree = "<group>"; };
 		F9C8450B252998DC00A69809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9C8450E252998DC00A69809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9C84510252998DC00A69809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C845AC252B07C000A69809 /* PopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		F9C845B0252B119400A69809 /* MovieViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
+		F9D147B0252B35AE0072DA0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F9D147B3252B360A0072DA0A /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		F9D147B7252B4B2B0072DA0A /* PopularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewModel.swift; sourceTree = "<group>"; };
+		F9D147BC252B4C270072DA0A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		FF0ADD02A04CBE8C3807B318 /* Pods-LunaMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunaMovie.release.xcconfig"; path = "Target Support Files/Pods-LunaMovie/Pods-LunaMovie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB12A07B2AB5DA555FDC489 /* Pods_LunaMovie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B9CFCE83ACF946449232EEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD19F8A5031D49E5194FF18 /* Pods_LunaMovie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F291BB3F2C33B4DAE4A488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5372713FB2FD2ABE791927E3 /* Pods-LunaMovie.debug.xcconfig */,
+				FF0ADD02A04CBE8C3807B318 /* Pods-LunaMovie.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F9C844F3252998DC00A69809 = {
 			isa = PBXGroup;
 			children = (
 				F9C844FE252998DC00A69809 /* LunaMovie */,
 				F9C844FD252998DC00A69809 /* Products */,
+				84F291BB3F2C33B4DAE4A488 /* Pods */,
+				4B9CFCE83ACF946449232EEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +109,8 @@
 		F9C845172529990C00A69809 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9D147BB252B4B420072DA0A /* Repository */,
+				F9D147BA252B4B330072DA0A /* Entity */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -81,6 +118,8 @@
 		F9C845182529991500A69809 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F9D147AE252B35450072DA0A /* Favorite */,
+				F9C845AB252B07A100A69809 /* Popular */,
 				F9C845192529993000A69809 /* Main */,
 			);
 			path = UI;
@@ -89,9 +128,42 @@
 		F9C845192529993000A69809 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				F9C84503252998DC00A69809 /* ViewController.swift */,
+				F9C845B0252B119400A69809 /* MovieViewCell.swift */,
+				F9D147B0252B35AE0072DA0A /* MainViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		F9C845AB252B07A100A69809 /* Popular */ = {
+			isa = PBXGroup;
+			children = (
+				F9C845AC252B07C000A69809 /* PopularViewController.swift */,
+				F9D147B7252B4B2B0072DA0A /* PopularViewModel.swift */,
+			);
+			path = Popular;
+			sourceTree = "<group>";
+		};
+		F9D147AE252B35450072DA0A /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				F9D147B3252B360A0072DA0A /* FavoriteViewController.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		F9D147BA252B4B330072DA0A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F9D147BC252B4C270072DA0A /* Movie.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F9D147BB252B4B420072DA0A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9C84513252998DC00A69809 /* Build configuration list for PBXNativeTarget "LunaMovie" */;
 			buildPhases = (
+				2F09670BB8111CD811151007 /* [CP] Check Pods Manifest.lock */,
 				F9C844F8252998DC00A69809 /* Sources */,
 				F9C844F9252998DC00A69809 /* Frameworks */,
 				F9C844FA252998DC00A69809 /* Resources */,
+				1CB58E30445CEB372095757E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,15 +233,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CB58E30445CEB372095757E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LunaMovie/Pods-LunaMovie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LunaMovie/Pods-LunaMovie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LunaMovie/Pods-LunaMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F09670BB8111CD811151007 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LunaMovie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9C844F8252998DC00A69809 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C84504252998DC00A69809 /* ViewController.swift in Sources */,
+				F9D147B8252B4B2B0072DA0A /* PopularViewModel.swift in Sources */,
+				F9C845AD252B07C000A69809 /* PopularViewController.swift in Sources */,
+				F9D147BD252B4C270072DA0A /* Movie.swift in Sources */,
 				F9C84500252998DC00A69809 /* AppDelegate.swift in Sources */,
 				F9C8450A252998DC00A69809 /* LunaMovie.xcdatamodeld in Sources */,
+				F9D147B4252B360A0072DA0A /* FavoriteViewController.swift in Sources */,
 				F9C84502252998DC00A69809 /* SceneDelegate.swift in Sources */,
+				F9C845B1252B119400A69809 /* MovieViewCell.swift in Sources */,
+				F9D147B1252B35AE0072DA0A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +432,7 @@
 		};
 		F9C84514252998DC00A69809 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5372713FB2FD2ABE791927E3 /* Pods-LunaMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,6 +452,7 @@
 		};
 		F9C84515252998DC00A69809 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0ADD02A04CBE8C3807B318 /* Pods-LunaMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
