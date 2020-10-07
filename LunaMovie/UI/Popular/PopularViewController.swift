@@ -6,32 +6,50 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 private let reuseIdentifier = "MovieCell"
 
-class PopularViewController: UITableViewController {
+class PopularViewController: UIViewController, UITableViewDelegate {
     
-    let numbers = [1,2,3,4,5,6,7,8]
+    var movies: [Movie]? = nil
+    let disposeBag = DisposeBag()
+    private var popularViewModel: PopularViewModel! = PopularViewModel()
+    
+    @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numbers.count
-    }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! MovieViewCell
+//        let _ = MovieService.shared.fetchPopularMovie()
+//            .subscribe(
+//                onNext: { response in
+//                    print("Response: \(response)")
+//                    self.movies = response.results
+//                }, onError: { error in
+//                    print("Error \(error)")
+//                }).disposed(by: disposeBag)
         
-        cell.movieTitle.text = "Movie \(numbers[indexPath.row])"
-
-        return cell
+        popularViewModel.fetchPopularMovie()
+            .observeOn(MainScheduler.instance)
+            .bind(to: tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: MovieViewCell.self)) { index, viewModel, cell in
+                
+                cell.movieTitle.text = viewModel.title
+                DispatchQueue.global().async { [weak self] in
+                    if let data = try? Data(contentsOf: "https://image.tmdb.org/t/p/w500/\(viewModel.poster)".asURL()) {
+                                if let image = UIImage(data: data) {
+                                    DispatchQueue.main.async {
+                                        cell.poster.image = image
+                                    }
+                                }
+                            }
+                        }
+            }.disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(MovieViewModel.self).subscribe(onNext: { movie in
+            print(movie.title)
+        }).disposed(by: disposeBag)
     }
 
 }

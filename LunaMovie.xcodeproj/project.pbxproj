@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5DB12A07B2AB5DA555FDC489 /* Pods_LunaMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD19F8A5031D49E5194FF18 /* Pods_LunaMovie.framework */; };
+		F9B20D30252C9AB4008F0556 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D2F252C9AB4008F0556 /* HttpRouter.swift */; };
+		F9B20D33252C9CBD008F0556 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D32252C9CBD008F0556 /* HttpService.swift */; };
+		F9B20D38252CA2DC008F0556 /* MovieHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D37252CA2DC008F0556 /* MovieHttpService.swift */; };
+		F9B20D3B252D89DC008F0556 /* MovieHttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D3A252D89DC008F0556 /* MovieHttpRouter.swift */; };
+		F9B20D3F252D93D0008F0556 /* ResponseSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D3E252D93D0008F0556 /* ResponseSerialize.swift */; };
+		F9B20D43252D9654008F0556 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D42252D9654008F0556 /* MovieAPI.swift */; };
+		F9B20D46252D98D7008F0556 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D45252D98D7008F0556 /* MovieService.swift */; };
+		F9B20D49252DBF7D008F0556 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D48252DBF7D008F0556 /* MovieViewModel.swift */; };
 		F9C84500252998DC00A69809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C844FF252998DC00A69809 /* AppDelegate.swift */; };
 		F9C84502252998DC00A69809 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C84501252998DC00A69809 /* SceneDelegate.swift */; };
 		F9C84507252998DC00A69809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C84505252998DC00A69809 /* Main.storyboard */; };
@@ -25,6 +33,14 @@
 /* Begin PBXFileReference section */
 		5372713FB2FD2ABE791927E3 /* Pods-LunaMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunaMovie.debug.xcconfig"; path = "Target Support Files/Pods-LunaMovie/Pods-LunaMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		DCD19F8A5031D49E5194FF18 /* Pods_LunaMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunaMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B20D2F252C9AB4008F0556 /* HttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		F9B20D32252C9CBD008F0556 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		F9B20D37252CA2DC008F0556 /* MovieHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHttpService.swift; sourceTree = "<group>"; };
+		F9B20D3A252D89DC008F0556 /* MovieHttpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHttpRouter.swift; sourceTree = "<group>"; };
+		F9B20D3E252D93D0008F0556 /* ResponseSerialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialize.swift; sourceTree = "<group>"; };
+		F9B20D42252D9654008F0556 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
+		F9B20D45252D98D7008F0556 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		F9B20D48252DBF7D008F0556 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		F9C844FC252998DC00A69809 /* LunaMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunaMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C844FF252998DC00A69809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C84501252998DC00A69809 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,8 +84,35 @@
 				5372713FB2FD2ABE791927E3 /* Pods-LunaMovie.debug.xcconfig */,
 				FF0ADD02A04CBE8C3807B318 /* Pods-LunaMovie.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9B20D2E252C9A9E008F0556 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F9B20D35252CA2B8008F0556 /* Movie */,
+				F9B20D2F252C9AB4008F0556 /* HttpRouter.swift */,
+				F9B20D32252C9CBD008F0556 /* HttpService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F9B20D35252CA2B8008F0556 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				F9B20D37252CA2DC008F0556 /* MovieHttpService.swift */,
+				F9B20D3A252D89DC008F0556 /* MovieHttpRouter.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		F9B20D3D252D9341008F0556 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				F9B20D42252D9654008F0556 /* MovieAPI.swift */,
+				F9B20D45252D98D7008F0556 /* MovieService.swift */,
+			);
+			path = Movie;
 			sourceTree = "<group>";
 		};
 		F9C844F3252998DC00A69809 = {
@@ -109,6 +152,7 @@
 		F9C845172529990C00A69809 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9B20D2E252C9A9E008F0556 /* Service */,
 				F9D147BB252B4B420072DA0A /* Repository */,
 				F9D147BA252B4B330072DA0A /* Entity */,
 			);
@@ -130,6 +174,7 @@
 			children = (
 				F9C845B0252B119400A69809 /* MovieViewCell.swift */,
 				F9D147B0252B35AE0072DA0A /* MainViewController.swift */,
+				F9B20D48252DBF7D008F0556 /* MovieViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -155,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				F9D147BC252B4C270072DA0A /* Movie.swift */,
+				F9B20D3E252D93D0008F0556 /* ResponseSerialize.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -162,6 +208,7 @@
 		F9D147BB252B4B420072DA0A /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				F9B20D3D252D9341008F0556 /* Movie */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -281,13 +328,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D147B8252B4B2B0072DA0A /* PopularViewModel.swift in Sources */,
+				F9B20D33252C9CBD008F0556 /* HttpService.swift in Sources */,
 				F9C845AD252B07C000A69809 /* PopularViewController.swift in Sources */,
+				F9B20D30252C9AB4008F0556 /* HttpRouter.swift in Sources */,
 				F9D147BD252B4C270072DA0A /* Movie.swift in Sources */,
+				F9B20D3F252D93D0008F0556 /* ResponseSerialize.swift in Sources */,
 				F9C84500252998DC00A69809 /* AppDelegate.swift in Sources */,
+				F9B20D38252CA2DC008F0556 /* MovieHttpService.swift in Sources */,
+				F9B20D3B252D89DC008F0556 /* MovieHttpRouter.swift in Sources */,
+				F9B20D43252D9654008F0556 /* MovieAPI.swift in Sources */,
 				F9C8450A252998DC00A69809 /* LunaMovie.xcdatamodeld in Sources */,
 				F9D147B4252B360A0072DA0A /* FavoriteViewController.swift in Sources */,
 				F9C84502252998DC00A69809 /* SceneDelegate.swift in Sources */,
 				F9C845B1252B119400A69809 /* MovieViewCell.swift in Sources */,
+				F9B20D46252D98D7008F0556 /* MovieService.swift in Sources */,
+				F9B20D49252DBF7D008F0556 /* MovieViewModel.swift in Sources */,
 				F9D147B1252B35AE0072DA0A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
