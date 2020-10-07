@@ -17,7 +17,28 @@ struct MovieViewModel {
         return movie.posterPath
     }
     
+    var backdrop: String {
+        return movie.backdropPath
+    }
+    
+    var date: String {
+        return movie.releaseDate
+    }
+    
+    var rate: String {
+        return "\(movie.voteAverage)"
+    }
+    
+    var overview: String {
+        return movie.overview
+    }
+    
+    var id: Int {
+        return movie.id
+    }
+    
     init(movie: Movie) {
         self.movie = movie
     }
+    
 }

@@ -16,6 +16,9 @@
 		F9B20D43252D9654008F0556 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D42252D9654008F0556 /* MovieAPI.swift */; };
 		F9B20D46252D98D7008F0556 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D45252D98D7008F0556 /* MovieService.swift */; };
 		F9B20D49252DBF7D008F0556 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D48252DBF7D008F0556 /* MovieViewModel.swift */; };
+		F9B20D5B252DF3DA008F0556 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D5A252DF3DA008F0556 /* DetailViewController.swift */; };
+		F9B20D5F252E0085008F0556 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D5E252E0085008F0556 /* DetailViewModel.swift */; };
+		F9B20D62252E02DB008F0556 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B20D61252E02DB008F0556 /* MovieDetailViewModel.swift */; };
 		F9C84500252998DC00A69809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C844FF252998DC00A69809 /* AppDelegate.swift */; };
 		F9C84502252998DC00A69809 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C84501252998DC00A69809 /* SceneDelegate.swift */; };
 		F9C84507252998DC00A69809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C84505252998DC00A69809 /* Main.storyboard */; };
@@ -41,6 +44,9 @@
 		F9B20D42252D9654008F0556 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
 		F9B20D45252D98D7008F0556 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		F9B20D48252DBF7D008F0556 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		F9B20D5A252DF3DA008F0556 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F9B20D5E252E0085008F0556 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F9B20D61252E02DB008F0556 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		F9C844FC252998DC00A69809 /* LunaMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunaMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C844FF252998DC00A69809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C84501252998DC00A69809 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +121,16 @@
 			path = Movie;
 			sourceTree = "<group>";
 		};
+		F9B20D59252DF3B7008F0556 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F9B20D5A252DF3DA008F0556 /* DetailViewController.swift */,
+				F9B20D5E252E0085008F0556 /* DetailViewModel.swift */,
+				F9B20D61252E02DB008F0556 /* MovieDetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		F9C844F3252998DC00A69809 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +178,7 @@
 		F9C845182529991500A69809 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F9B20D59252DF3B7008F0556 /* Detail */,
 				F9D147AE252B35450072DA0A /* Favorite */,
 				F9C845AB252B07A100A69809 /* Popular */,
 				F9C845192529993000A69809 /* Main */,
@@ -334,13 +351,16 @@
 				F9D147BD252B4C270072DA0A /* Movie.swift in Sources */,
 				F9B20D3F252D93D0008F0556 /* ResponseSerialize.swift in Sources */,
 				F9C84500252998DC00A69809 /* AppDelegate.swift in Sources */,
+				F9B20D5F252E0085008F0556 /* DetailViewModel.swift in Sources */,
 				F9B20D38252CA2DC008F0556 /* MovieHttpService.swift in Sources */,
 				F9B20D3B252D89DC008F0556 /* MovieHttpRouter.swift in Sources */,
+				F9B20D5B252DF3DA008F0556 /* DetailViewController.swift in Sources */,
 				F9B20D43252D9654008F0556 /* MovieAPI.swift in Sources */,
 				F9C8450A252998DC00A69809 /* LunaMovie.xcdatamodeld in Sources */,
 				F9D147B4252B360A0072DA0A /* FavoriteViewController.swift in Sources */,
 				F9C84502252998DC00A69809 /* SceneDelegate.swift in Sources */,
 				F9C845B1252B119400A69809 /* MovieViewCell.swift in Sources */,
+				F9B20D62252E02DB008F0556 /* MovieDetailViewModel.swift in Sources */,
 				F9B20D46252D98D7008F0556 /* MovieService.swift in Sources */,
 				F9B20D49252DBF7D008F0556 /* MovieViewModel.swift in Sources */,
 				F9D147B1252B35AE0072DA0A /* MainViewController.swift in Sources */,

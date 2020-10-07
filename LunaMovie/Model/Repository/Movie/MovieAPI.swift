@@ -9,4 +9,5 @@ import RxSwift
 
 protocol MovieAPI {
     func fetchPopularMovie() -> Observable<[Movie]>
+    func fetchDetailMovie(id: Int) -> Observable<MovieDetail>
 }
